@@ -1,0 +1,80 @@
+.father-container{
+    width:100%;
+    margin: 0;
+    height:100vh;
+    display:flex;
+}
+.board-container{
+    width:100%;
+    max-width: 550px;
+    padding:20px;
+}
+
+.board-container h1 {
+    text-align: center;
+}
+.board{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.board button{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 100px;
+    background: none;
+    border: 2px solid #05ccab;
+    cursor:pointer;
+}
+.board button::after{
+    content: '';
+    display:block;
+    padding-bottom:100%;
+}
+p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.titleMain{
+    font-size:30px;
+}
+.reset button, .history button {
+    background-color:yellow;
+    padding:10px 20px;
+    border:none;
+    cursor:pointer;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius:10px;
+    color:#000;
+}
+.reset button{
+    margin-top: 20px;  
+}
+.history:nth-of-type(1){
+    margin-top:175px;
+}
+.history{
+    margin-left:10px;
+}
+.history button{
+    text-align: center;
+    margin: 5px;
+}
+.winner {
+    font-size: 18px;
+    color: #000;
+    font-weight:bold;
+    text-transform: uppercase;
+    background-color:  #05ccab;
+    width:220px;
+    margin:20px ;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+}
+.w100{
+    width:100%;
+}
